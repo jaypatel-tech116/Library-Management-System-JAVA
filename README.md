@@ -140,10 +140,10 @@ LibrarySystem (Main Class)
 ## 📸 Sample Output
 
 ```
-╔══════════════════════════════════════════════════╗
-║       LIBRARY MANAGEMENT SYSTEM                 ║
-║       Welcome! Please login to continue.        ║
-╚══════════════════════════════════════════════════╝
++==================================================+
+|       LIBRARY MANAGEMENT SYSTEM                  |
+|       Welcome! Please login to continue.         |
++==================================================+
 
 --- Main Menu ---
 1. Librarian Login
@@ -166,17 +166,17 @@ Login successful! Welcome, Admin.
 7. Logout
 Choice: 1
 
-╔══════════════════════════════════════════════════════════════════════════════════╗
-║                              BOOK CATALOGUE                                    ║
-╠══════════════════════════════════════════════════════════════════════════════════╣
-║ No.   Title                        Author                 ISBN            Stock ║
-╠══════════════════════════════════════════════════════════════════════════════════╣
-║ 1     The Great Gatsby             F. Scott Fitzgerald    978-0743273565  3     ║
-║ 2     1984                         George Orwell          978-0451524935  5     ║
-║ 3     To Kill a Mockingbird        Harper Lee             978-0061120084  2     ║
-║ 4     The Catcher in the Rye       J.D. Salinger          978-0316769488  4     ║
-║ 5     Pride and Prejudice          Jane Austen            978-0141439518  3     ║
-╚══════════════════════════════════════════════════════════════════════════════════╝
++-------+----------------------------+----------------------+----------------+-------+
+|                                BOOK CATALOGUE                                      |
++-------+----------------------------+----------------------+----------------+-------+
+| No.   | Title                      | Author               | ISBN           | Stock |
++-------+----------------------------+----------------------+----------------+-------+
+| 1     | The Great Gatsby           | F. Scott Fitzgerald  | 978-0743273565 | 3     |
+| 2     | 1984                       | George Orwell        | 978-0451524935 | 5     |
+| 3     | To Kill a Mockingbird      | Harper Lee           | 978-0061120084 | 2     |
+| 4     | The Catcher in the Rye     | J.D. Salinger        | 978-0316769488 | 4     |
+| 5     | Pride and Prejudice        | Jane Austen          | 978-0141439518 | 3     |
++-------+----------------------------+----------------------+----------------+-------+
 Total books: 5
 ```
 

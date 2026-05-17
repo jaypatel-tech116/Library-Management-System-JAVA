@@ -225,10 +225,10 @@ public class LibrarySystem {
 
     // ========================= MAIN MENU =========================
     private static void mainMenu() {
-        System.out.println("╔══════════════════════════════════════════════════╗");
-        System.out.println("║       LIBRARY MANAGEMENT SYSTEM                 ║");
-        System.out.println("║       Welcome! Please login to continue.        ║");
-        System.out.println("╚══════════════════════════════════════════════════╝");
+        System.out.println("+==================================================+");
+        System.out.println("|       LIBRARY MANAGEMENT SYSTEM                  |");
+        System.out.println("|       Welcome! Please login to continue.         |");
+        System.out.println("+==================================================+");
 
         while (true) {
             System.out.println("\n--- Main Menu ---");
@@ -407,24 +407,25 @@ public class LibrarySystem {
     // ========================= BOOK OPERATIONS =========================
     private static void viewBooks() {
         boolean hasBooks = false;
-        System.out.println("\n╔══════════════════════════════════════════════════════════════════════════════════╗");
-        System.out.println("║                              BOOK CATALOGUE                                    ║");
-        System.out.println("╠══════════════════════════════════════════════════════════════════════════════════╣");
-        System.out.printf("║ %-5s %-28s %-22s %-15s %-5s ║%n", "No.", "Title", "Author", "ISBN", "Stock");
-        System.out.println("╠══════════════════════════════════════════════════════════════════════════════════╣");
+        String sep = "+-------+----------------------------+----------------------+----------------+-------+";
+        System.out.println("\n" + sep);
+        System.out.println("|                                BOOK CATALOGUE                                      |");
+        System.out.println(sep);
+        System.out.printf("| %-5s | %-26s | %-20s | %-14s | %-5s |%n", "No.", "Title", "Author", "ISBN", "Stock");
+        System.out.println(sep);
         int count = 1;
         for (Book book : books) {
             if (book != null) {
                 hasBooks = true;
                 String stockDisplay = book.getStock() > 0 ? String.valueOf(book.getStock()) : "N/A";
-                System.out.printf("║ %-5d %-28s %-22s %-15s %-5s ║%n",
+                System.out.printf("| %-5d | %-26s | %-20s | %-14s | %-5s |%n",
                         count++, book.getTitle(), book.getAuthor(), book.getISBN(), stockDisplay);
             }
         }
         if (!hasBooks) {
-            System.out.println("║                        No books in the library.                                ║");
+            System.out.println("|                          No books in the library.                                |");
         }
-        System.out.println("╚══════════════════════════════════════════════════════════════════════════════════╝");
+        System.out.println(sep);
         System.out.println("Total books: " + (count - 1));
     }
 
